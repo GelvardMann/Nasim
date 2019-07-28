@@ -199,8 +199,7 @@ nav {
 
 /* Who We Are box */
 .about_us_box {
-   padding: 2em 0;
-   margin-bottom: 3em;
+   padding-top: 2em;
    color: #818991;
    -webkit-box-shadow: 0px 3px 92.12px 5.88px rgba(0, 0, 0, 0.15);
    -moz-box-shadow: 0px 3px 92.12px 5.88px rgba(0, 0, 0, 0.15);
@@ -210,13 +209,14 @@ nav {
 .who_we_are_box {
    display: flex;
    justify-content: space-around;
-   margin-bottom: 5em
+   margin-bottom: 5em;
 }
 
 .who_we_are_box_item {
    width: 43.08943089430894%;
+   box-sizing: border-box;
    max-width: 600px;
-   padding: 1em;
+   padding: .5em;
    font-size: .8em;
    font-weight: bold;
 }
@@ -225,6 +225,7 @@ nav {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   padding: 2em 1em;
 }
 
 iframe {
@@ -572,7 +573,8 @@ footer .gplus {
 
 @media screen and (max-width: 700px) {
    header {
-      padding: 1em;
+      padding: .5em;
+      box-sizing: border-box;
    }
    nav {
       display: flex;
@@ -580,13 +582,14 @@ footer .gplus {
    }
    .menu_burger {
       display: block;
+      margin-top: .2em;
    }
 
    .nav_menu {
       display: none;
       position: absolute;
       width: 100%;
-      top: 74px;
+      top: 58px;
       left: 0;
       background-color: rgba(80, 174, 160, 1);
    }
@@ -602,8 +605,6 @@ footer .gplus {
    .nav_menu_contacts {
       right: 35%;
       top: 2.2em;
-
-
    }
 
    .who_we_are_box {
@@ -671,5 +672,19 @@ footer .gplus {
       align-items: center;
       flex-direction: column-reverse;
 
+   }
+}
+
+@media screen and (max-width: 400px) {
+   h2 {
+      font-size: 1.8em;
+   }
+   .nav_menu_contacts {
+      right: 20%;
+      top: 1.8em;
+   }
+
+   .our_team_item {
+      width: 90%;
    }
 }
