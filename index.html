@@ -5,12 +5,12 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="style/normalize.css">
    <link rel="stylesheet" href="style/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
-   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Montserrat|Roboto+Slab&display=swap" rel="stylesheet">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+   <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+   <script src="https://use.fontawesome.com/e12d150bb4.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="js/script.js"></script>
    <title>ShopnoTest!!!</title>
 </head>
@@ -79,10 +79,9 @@
             </div>
          </div>
       </section>
-      <section class="gallery swiper-container">
-         <div class="gallery">
-            <h2>Portfolio</h2>
-            <div class="gallery_box">
+      <section class="gallery">
+         <div class="owl-carousel owl-theme">
+            <div>
                <ul id="slide">
                   <li class="slider_item">
                      <img src="images/I-will-do-photoshop-web-ui-psd-website-template-psd-website-and-landing-page-2.jpg" alt="">
@@ -117,6 +116,8 @@
                      <a href="#">cover design</a>
                   </li>
                </ul>
+            </div>
+            <div>
                <ul id="slide">
                   <li class="slider_item">
                      <img src="images/I-will-do-photoshop-web-ui-psd-website-template-psd-website-and-landing-page-2.jpg" alt="">
@@ -151,6 +152,8 @@
                      <a href="#">cover design</a>
                   </li>
                </ul>
+            </div>
+            <div>
                <ul id="slide">
                   <li class="slider_item">
                      <img src="images/I-will-do-photoshop-web-ui-psd-website-template-psd-website-and-landing-page-2.jpg" alt="">
@@ -186,23 +189,15 @@
                   </li>
                </ul>
             </div>
-            <div class="slider_switchers">
-               <input type="radio" name="slider_chek" class="switcher" id="radioButton1" onclick="showThis(this)" checked>
-               <input type="radio" name="slider_chek" class="switcher" id="radioButton2" onclick="showThis(this)">
-               <input type="radio" name="slider_chek" class="switcher" id="radioButton3" onclick="showThis(this)">
-               <label for="radioButton1"><span class="radio_circle frst"></span></label>
-               <label for="radioButton2"><span class="radio_circle scnd"></span></label>
-               <label for="radioButton3"><span class="radio_circle trht"></span></label>
-            </div>
          </div>
       </section>
-      <div class="our_team_box">
+      <section class="our_team_box">
          <h2>our team</h2>
          <ul>
             <li class="our_team_item">
                <img src="images/team_1.png" alt="">
                <h4>Md. Nasim</h4>
-               <p>founder</p>
+               <p>FOUNDER</p>
                <p>@mdnasimadobe</p>
                <div class="social">
                   <a href="#" class="social_icon fb"></a>
@@ -233,33 +228,28 @@
                </div>
             </li>
          </ul>
-      </div>
+      </section>
+      <section class="message_box">
+         <form class="" action="index.html" method="post">
+            <input class="form_item" type="text" name="" placeholder="NAME" value="">
+            <input class="form_item" type="text" name="" placeholder="EMAIL" value="">
+            <input class="form_item" type="text" name="" placeholder="PHONE" value="">
+            <textarea class="form_item" type="text" name="" placeholder="MESSAGE" value=""></textarea>
+            <input type="submit" name="" value="SEND">
+         </form>
+      </section>
    </main>
-      <script src="js/script.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"></script>
-      <script>
-      var mySwiper = new Swiper ('.swiper-container', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
+   <footer>
+      <p>&copy; All Rights Reserved</p>
+      <div class="social">
+         <a class="social_icon" href="#"></a>
+         <a class="social_icon in" href="#"></a>
+         <a class="social_icon gplus" href="#"></a>
+      </div>
 
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
+   </footer>
+   <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+   <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+</body>
 
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      })
-      </script>
-   </body>
 </html>
