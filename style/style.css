@@ -421,8 +421,8 @@ iframe {
    padding: 1.75em;
    border: 1px solid rgb(22, 200, 185);
    box-shadow: 0px 4px 6.86px 0.14px rgba(0, 0, 0, 0.25);
-   width: 320px;
-   
+   max-width: 320px;
+
 }
 
 .our_team_item h4 {
@@ -534,7 +534,6 @@ footer .social_icon {
    background-position: -965px -34px;
    margin: 0;
    margin: 0 1em;
-
 }
 
 footer .in {
@@ -546,13 +545,67 @@ footer .gplus {
 }
 
 /* media queries  */
+@media screen and (min-width: 1500px) {
+   .service_card_box {
+      justify-content: space-around;
+   }
+
+   .service_card {
+      max-width: 300px;
+   }
+}
+
 @media screen and (max-width: 1010px) {
    .service_card {
       width: calc(100%/12*5);
    }
+
+   .our_team_item {
+      width: calc(100%/12*6);
+   }
+
+   .our_team_box ul {
+      flex-wrap: wrap;
+   }
+
 }
 
 @media screen and (max-width: 700px) {
+   header {
+      padding: 1em;
+   }
+   nav {
+      display: flex;
+      justify-content: flex-end;
+   }
+   .menu_burger {
+      display: block;
+   }
+
+   .nav_menu {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 74px;
+      left: 0;
+      background-color: rgba(80, 174, 160, 1);
+   }
+   .nav_menu a {
+      margin: 0 auto;
+      text-align: center;
+      border-bottom: 1px solid #fff;
+   }
+
+   .nav_menu li a:hover {
+      text-decoration: underline;
+   }
+   .nav_menu_contacts {
+      right: 35%;
+      top: 2.2em;
+
+
+   }
+
    .who_we_are_box {
       flex-direction: column-reverse;
       width: 100%;
@@ -582,16 +635,9 @@ footer .gplus {
       padding: 0 2%;
    }
 
-   .fa {
-      display: none;
-   }
-
    .our_team_item {
       width: 55%;
-      height: 450px;
-      margin: 1em auto;
-      border: 1px solid rgb(22, 200, 185);
-      box-shadow: 0px 4px 6.86px 0.14px rgba(0, 0, 0, 0.25);
+
    }
 
    .our_team_box ul {
@@ -602,14 +648,28 @@ footer .gplus {
    .owl-next, .owl-prev {
       display: none !important;
    }
-}
 
-@media screen and (min-width: 1500px) {
-   .service_card_box {
-      justify-content: space-around;
+   .message_box {
+      padding: 1em 5%;
    }
 
-   .service_card {
-      max-width: 300px;
+   form {
+      height: auto;
+   }
+   .form_item {
+      width: 100%;
+      margin: .5em auto;
+   }
+
+   input[type="submit"] {
+      position: static;
+      margin: .5em 0;
+   }
+
+   footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+
    }
 }
