@@ -312,6 +312,7 @@ iframe {
    text-align: center;
    width: 100%;
    position: relative;
+   padding: 2em 0 0 0;
 }
 
 .gallery h2 {
@@ -513,6 +514,8 @@ input[type="submit"] {
    box-shadow: 0px 4px 6.86px 0.14px rgba(0, 0, 0, 0.15);
    cursor: pointer;
    padding: .5em 3em;
+   border-radius: 0;
+   -webkit-border-radius: 0;
 }
 
 footer {
