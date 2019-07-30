@@ -219,6 +219,7 @@ nav {
    padding: .5em;
    font-size: .8em;
    font-weight: bold;
+   position: relative;
 }
 
 .item_right {
@@ -229,6 +230,11 @@ nav {
 }
 
 iframe {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
    object-fit: cover;
    text-align: center;
    -webkit-box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.75);
