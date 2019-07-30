@@ -504,6 +504,7 @@ form {
 
 input[type="submit"] {
    position: absolute;
+   display: block;
    bottom: -3em;
    right: 0;
    color: #fff;
