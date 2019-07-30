@@ -515,7 +515,7 @@ input[type="submit"] {
    cursor: pointer;
    padding: .5em 3em;
    border-radius: 0;
-   -webkit-border-radius: 0;
+   -webkit-appearance: button;
 }
 
 footer {
