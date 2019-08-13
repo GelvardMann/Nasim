@@ -483,7 +483,6 @@ form {
    height: 250px;
    display: flex;
    flex-wrap: wrap;
-   flex-direction: column;
    justify-content: space-between;
    align-content: space-between;
    position: relative;
